@@ -60,7 +60,7 @@ function startTokensLoading() {
   
 function readTextFile() {
 
-  fetch('C:/Users/eddyh/Desktop/Crypto Family App/assets/Tokens.txt')
+  fetch('assets/Tokens.txt')
   .then(response => response.text())
   .then(text => loadTokens(text));
 }
