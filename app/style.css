@@ -1,0 +1,299 @@
+@font-face { font-family: Roboto-Medium; src: url('Roboto-Medium.woff'); } 
+
+body{
+    background-color: rgba(29, 32, 55, 1);
+    border-width: 0px;
+    margin: 0;
+    padding: 0;
+    color: #e1e1e1;
+}
+      
+.sideBar{
+    border: 0;
+    float: left;
+    width: 240px;
+    height: 100%;
+    background-color: #313557;
+    border-width: 0px;
+    margin: 0;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+}
+
+.body{
+    overflow-y: auto;
+    height: 100%;
+    color: #e1e1e1;
+}
+
+.sideBar::-webkit-scrollbar {
+    display: none;
+  }
+
+.SidebarLink__anchor{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 19.2px;
+    color: #73768D;
+}
+
+.barIcon{
+    width: 20px;
+    height: 20px;
+    padding-right: 15px;
+    float: left;
+    filter:grayscale(100%)
+}
+
+.text{
+    float: left;
+    font-family: Roboto-Medium;
+}
+
+.SidebarLink__linkStart{
+    padding-left: 30px;
+    padding-right: 15px;
+    height: 19.2px;
+    float: left;
+}
+
+.copyRight{
+    width: 90%;
+    text-align:left;
+    padding-left: 5%;
+}
+
+
+
+/*Bridge Transfer CSS*/
+
+.transfer{
+  background-image: url('https://cdn.discordapp.com/attachments/688379528070037509/856888060742598696/bridge.png');
+  margin : auto; 
+  border-bottom: blue;
+  border-radius: 15px;
+  width: 400px;
+  height: 625px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.blockPair{
+  background-image: url('https://cdn.discordapp.com/attachments/688379528070037509/856888060742598696/bridge.png');
+  background-position-x: 100px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.token{
+  outline: none;
+  margin: auto;
+  margin-top: 190px;
+  width: 320px;
+  height: 38px;
+  background-color: #2d2929;
+  border-radius: 15px;
+}
+
+.token:hover{
+  cursor:pointer;
+}
+
+.token-icon{
+  float: left;
+  margin-left: 10px;
+  margin-top: 4px;
+  width: 30px;
+  height: 30px;
+}
+
+.token-name{
+  float: left;
+  margin-left: 7px;
+  margin-top: 8.5px;
+}
+
+.downArrow{
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.input{
+  width: 80%;
+  height: 28px;
+  color : #e1e1e1;
+  background: transparent;
+  border-width: 0px;
+  border-bottom-width: 2px;
+  margin-left: 50px;
+  margin-bottom: 33px;
+  margin-top: 0px;
+  outline: none;
+  font-size: 15px;
+}
+
+#to{
+  margin-top: 40px;
+
+}
+#fee{
+  margin-top: 5px;
+}
+#claimingFee{
+  margin-top: 2px;
+}
+
+#submit{
+  text-align: center;
+  color : #f0f0f0;
+  background-color: #414040;
+  font-size: small;
+  outline: none;
+  font-weight: bold;
+  border-radius: 5px;
+  border-width: 0px;
+  width: 70px;
+  height: 30px;
+}
+#submit:hover {
+  cursor:pointer;
+}
+
+/****************************/
+
+#token-choose{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(165, 99, 0, 0.5);
+  visibility: hidden;
+}
+
+#token-choose-body{
+margin : auto; 
+background-color: #2d2929;
+border-bottom: blue;
+border-radius: 15px;
+width: 400px;
+height: 625px;
+font-family:sans-serif;
+margin-top: 20px;
+}
+
+#token-select{
+  margin: auto;
+  margin-top: 20px;
+  width: 90%;
+  height: 75%;
+  overflow-y: auto;
+}
+
+#token-token{
+  margin: auto;
+  width: 90%;
+  height: 60px;
+}
+#token-token:hover{
+  background-color: #1f1d1d;
+  cursor:pointer;
+}
+
+#token-token-icon{
+  float: left;
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+#token-token-symbol{
+  float: left;
+  size: 16px;
+  color: #F4EEFF;
+  font-weight: bold;
+  margin-left: 5px;
+  font-family: sans-serif;
+}
+
+#token-token-name{
+  float: left;
+  size: 14px;
+  color: #e7d9b9;
+  margin-left: 5px;
+  font-family: sans-serif;
+}
+
+#token-token-empty{
+  margin: auto; 
+  padding-top: 5px; 
+  visibility: hidden;
+}
+
+#select-a-token{
+  color:rgba(255, 255, 240, 0.925);
+  float: left;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+#close-x{
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  margin-top: 24px;
+}
+
+#close-x:hover{
+  cursor:pointer;
+}
+
+#token-input{
+  width: 90%;
+  height : 40px;
+  margin-left: 5%;
+  border-radius: 15px;
+  background-color: rgb(104, 104, 104);
+  border-width: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
+  color : #f0f0f0;
+  outline:orange;
+}
+
+::placeholder{
+  color : #f0f0f093;
+  padding-left: 5px;
+}
+
+#transfer-stats{
+  background-color: #2d2929;
+margin : auto; 
+border-bottom: blue;
+border-radius: 15px;
+width: 400px;
+height: 100px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#cut1{
+float: left;
+width: 200px;
+height: 100px;
+}
+#cut2{
+width: 200px;
+height: 100px;
+float: right;
+}
+
+
+#stake1{
+  display: none;
+}
+
+#stake2{
+  display: none;
+}  
