@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Staking | Crypto Family</title>
+        <link href="assets/img/CF-logo-black.png" rel="icon" type="image/png">
+        <link href="style.css" rel="stylesheet">
+        <script type="text/javascript" src="styling.js"></script>
+        <script type="text/javascript" src="functionality.js"></script>
+        <script type="text/javascript" src="tokens.js"></script>
+    </head>
+    <body>
+
+        <div id="token-choose">
+            <div id="token-choose-body">
+              <h3 id="select-a-token">Select a token</h3>
+              <img id="close-x" src="assets\img\close-x.png" onclick="hideTokens()">
+              <br/>
+              <hr style="height: 1px; color: aliceblue; margin-top: 35px; width: 99%; margin: auto;"/>
+              <br/>
+              <input id="token-input" placeholder="Search by name or paste address" onkeypress="search()" onkeydown="search()">
+        
+              <div id="token-select">
+              </div>
+            </div>
+        </div>
+
+        <div class="sideBar">
+            <h4 style="text-align: center; width: 100%; margin: 0;">Crypto Family</h4>
+            <div class="SidebarLink__anchor" id="bridgeBar" onmouseover="onHover('bridgeBar')" onmouseout="stopHover('bridgeBar')" style="margin-top: 75px;">
+                <div class="SidebarLink__linkStart">&#8226</div><img class="barIcon" id="bridgeBarIcon" src="assets\img\swap.png" style="width: 22px;"> <div class="text">Bridge</div>
+            </div>
+            <div class="SidebarLink__anchor" id="bridgeExplorerBar" onmouseover="onHover('bridgeExplorerBar')" onmouseout="stopHover('bridgeExplorerBar')">
+                <div class="SidebarLink__linkStart">&#8226</div><img class="barIcon" id="bridgeExplorerBarIcon" src="assets\img\bridge.png" style="height: 22px;"> <div class="text">Bridge Explorer</div>
+            </div>
+            <div class="SidebarLink__anchor" id="stakingBar" onmouseover="onHover('stakingBar')" onmouseout="stopHover('stakingBar')">
+                <div class="SidebarLink__linkStart">&#8226</div><img class="barIcon" id="stakingBarIcon" src="assets\img\coins.png" style="height: 22px;"> <div class="text">Staking</div>
+            </div>
+            <div class="copyRight">Copyright © 2021 Crypto Family.
+                All Rights Reserved.
+            </div>
+        </div>
+
+        <div class="body">
+            <br>
+            <div class="transfer">
+                <div>
+                    <select name="pets" id="bridge-select" class="blockPair">
+                        <option value="BSCETH">BSC->ETH</option>
+                        <option value="ETHBSC">ETH->BSC</option>
+                    </select>
+                </div>
+                <br>
+                <div class="token" onclick="showTokens()">
+                    <img  class="token-icon" src="assets/img/FT.png"> <h4 class="token-name">FT</h4>
+                    <img class="downArrow" src="assets/img/white-transparent-arrow.png">
+                </div>
+            
+                <input id="to" class="input" autocomplete="off">
+                <input id="amount" class="input" autocomplete="off">
+                <input id="fee" class="input" autocomplete="off">
+                <input id="claimingFee" class="input" autocomplete="off">
+                <br/><br/>
+                <center><input id="submit" type="submit" value="Transfer" style="width: 150px;" onclick="transfer()"></center>
+                <br/>
+                <center><h6 id="status"></h6></center>
+                <p style="text-align: center; margin-left: auto; margin-right: auto;"><h8 style="text-align: center;" id="address"></h8></p>
+              </div>
+        </div>
+
+        
+    </body>
+</html>
