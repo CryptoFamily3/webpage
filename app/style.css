@@ -107,7 +107,7 @@ body{
   height: 30px;
 }
 
-.token-name{
+#token-name{
   float: left;
   margin-left: 7px;
   margin-top: 8.5px;
