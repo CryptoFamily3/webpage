@@ -1,0 +1,11 @@
+ @import '../../../vars';
+.sidebar{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 240px;
+    background: rgba($primary, 0.75) !important;
+    left: 0;
+    backdrop-filter: blur(4px);
+
+}

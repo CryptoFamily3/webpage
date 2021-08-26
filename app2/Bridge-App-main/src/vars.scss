@@ -1,0 +1,26 @@
+$primary: #5C4185;
+$buttonColor: rgba(#B07DFE, 0.5);
+$primary-half: rgba( $primary, 0.5 );
+$input-color: linear-gradient(180deg, rgba(176, 125, 254, 0.25) 0%, rgba(141, 119, 176, 0.25) 100%) !important;
+
+
+
+.has-background-primary-half{
+    background: $primary-half !important;
+    color: white !important;
+}
+
+.is-button-color{
+    background: $buttonColor !important;
+    color: white !important;
+}
+
+
+.has-input-background{
+    background: $input-color;
+}
+
+
+.has-input-background2{
+    background: #37265F !important;
+}

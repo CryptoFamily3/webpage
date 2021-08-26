@@ -1,0 +1,15 @@
+@import '../../../vars.scss';
+
+.bordered{
+    border: none !important;
+    border: 1px solid #846AAA !important;
+    outline: none !important;
+}
+
+.transfer-btn{
+    border: none !important;
+}
+
+.transfer-card{
+    backdrop-filter: blur(4px);
+}

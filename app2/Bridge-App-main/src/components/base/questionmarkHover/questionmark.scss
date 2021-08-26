@@ -1,0 +1,24 @@
+.icon-hover{
+
+    cursor: pointer;
+
+    &:hover + .tip-panel{
+        display: block !important;
+
+    }
+}
+
+.tip-panel{
+
+    display: none !important;
+    position: absolute !important;
+    top: 0px !important;
+    left: 65px !important;
+    width: 300px;
+    min-height: 96px;
+    transform: translate(0, 00%) !important;
+
+    background: rgba(#5C4185, 0.5) !important;
+
+    z-index: 2;
+}
